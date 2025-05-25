@@ -26,4 +26,3 @@ if [[ "$1" == "--help" || "$1" == "-h" ]]; then
   echo "--help, -h         Wyświetla tę pomoc"
   exit 0
 fi
-fi
