@@ -19,3 +19,10 @@ if [[ "$1" == "--logs" || "$1" == "-l" ]]; then
     echo "Date: $(date "+%Y-%m-%d %H:%M:%S")" >> "$filename"
   done
 fi
+
+if [[ "$1" == "--init" ]]; then
+  git clone https://github.com/twoj-login/projekt-git.git .
+  export PATH="$PWD:$PATH"
+  echo "Repozytorium sklonowane i PATH ustawione."
+  exit 0
+fi
