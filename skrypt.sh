@@ -26,7 +26,6 @@ if [[ "$1" == "--help" || "$1" == "-h" ]]; then
   echo "--help, -h         Wyświetla tę pomoc"
   exit 0
 fi
-fi
 
 if [[ "$1" == "--init" ]]; then
   git clone https://github.com/twoj-login/projekt-git.git .
@@ -48,3 +47,4 @@ if [[ "$1" == "--error" || "$1" == "-e" ]]; then
     echo "Created by: skrypt.sh" >> "${dirname}/error${i}.txt"
     echo "Date: $(date "+%Y-%m-%d %H:%M:%S")" >> "${dirname}/error${i}.txt"
   done
+
